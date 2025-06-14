@@ -7,7 +7,7 @@ updates:
     schedule:
       interval: "weekly"
 
-  # Maintain dependencies for Maven
+  # Maintain dependencies for Maven 
   - package-ecosystem: "maven"
     directory: "/java"
     schedule:
