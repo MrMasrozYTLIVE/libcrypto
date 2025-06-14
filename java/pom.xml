@@ -7,9 +7,9 @@
     <name>Cryptography utilities</name>
     <groupId>dev.medzik</groupId>
     <artifactId>libcrypto</artifactId>
-    <version>1.2.0</version>
+    <version>1.3.0</version>
     <description>Cryptographic utilities — AES (CBC and GCM), Argon2 and X25519</description>
-    <url>https://github.com/M3DZIK/libcrypto</url>
+    <url>https://github.com/MrMasrozYTLIVE/libcrypto</url>
 
     <developers>
         <developer>
@@ -119,18 +119,6 @@
             </plugin>
 
             <plugin>
-                <groupId>org.sonatype.plugins</groupId>
-                <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.7.0</version>
-                <extensions>true</extensions>
-                <configuration>
-                    <serverId>ossrh</serverId>
-                    <nexusUrl>https://s01.oss.sonatype.org/</nexusUrl>
-                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
-                </configuration>
-            </plugin>
-
-            <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-gpg-plugin</artifactId>
                 <version>3.2.4</version>
@@ -162,9 +150,9 @@
     </build>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
+        <repository>
+            <id>mitask-repo</id>
+            <url>https://maven.mitask.dev/releases</url>
+        </repository>
     </distributionManagement>
 </project>
